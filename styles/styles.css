@@ -1,0 +1,54 @@
+main {
+  max-width: 840 px;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  width: 25rem;
+  margin: 2rem;
+  border: 1px solid rgb(0 0 0/ 1);
+  padding: 1rem;
+  background-color: #B0ACFA;
+  color: #0079FA;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+p { padding: 0; }
+
+footer {
+  margin-top: 15px;
+  border-top: 1px solid #0079FA;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.profile p {
+  font-family: Arial, sans-serif;
+}
+
