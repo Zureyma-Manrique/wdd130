@@ -247,10 +247,9 @@ section img {
 }
 
 .adventure-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 12px 12px 12px 12px 12px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
 }
 
 .adventure-item {
