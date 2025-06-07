@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
 }
 
+/* Layout */
 header, main, footer {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -36,14 +37,6 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     border-bottom: 2px solid var(--primary-color);
-}
-
-header img {
-    width: 150px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius);
 }
 
 footer {
@@ -64,6 +57,7 @@ footer a {
     text-decoration: none;
 }
 
+/* Typography */
 h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -80,11 +74,16 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-img {
+/* Images */
+img, header img {
     max-width: 100%;
     height: auto;
     display: block;
     border-radius: var(--border-radius);
+}
+
+header img {
+    width: 150px;
 }
 
 .circle-img {
@@ -92,10 +91,15 @@ img {
     object-fit: cover;
 }
 
+/* Navigation */
 nav ul, .socialmedia ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
+}
+
+.socialmedia ul {
+    justify-content: center;
 }
 
 nav a {
@@ -117,10 +121,6 @@ nav a[aria-current="page"] {
     color: var(--text-light);
 }
 
-.socialmedia ul {
-    justify-content: center;
-}
-
 .socialmedia img {
     width: 32px;
     height: 32px;
@@ -131,6 +131,7 @@ nav a[aria-current="page"] {
     transform: scale(1.2);
 }
 
+/* Grid Systems */
 .grid-2, .contact-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -149,6 +150,7 @@ nav a[aria-current="page"] {
     margin-top: 1.5rem;
 }
 
+/* Card Sections */
 .card-section, .history, .contact-info, .contact-form {
     background-color: var(--secondary-color);
     padding: 2rem;
@@ -162,6 +164,7 @@ nav a[aria-current="page"] {
     margin-bottom: 2rem;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     margin-bottom: 2rem;
@@ -208,6 +211,7 @@ nav a[aria-current="page"] {
     border: 3px solid var(--accent2-color);
 }
 
+/* History Section */
 .history-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -228,7 +232,9 @@ nav a[aria-current="page"] {
     object-fit: cover;
 }
 
+/* Interactive Items */
 .adventure-item, .employee-item {
+    background-color: var(--secondary-color);
     border-radius: var(--border-radius);
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -282,6 +288,7 @@ nav a[aria-current="page"] {
     font-size: 1.1rem;
 }
 
+/* Contact Information */
 .company-info h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -311,6 +318,7 @@ nav a[aria-current="page"] {
     box-shadow: var(--box-shadow);
 }
 
+/* Forms */
 .contact-form form {
     max-width: 600px;
     margin: 0 auto;
@@ -327,9 +335,7 @@ nav a[aria-current="page"] {
     color: var(--primary-color);
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
     width: 100%;
     padding: 0.75rem;
     border: 2px solid var(--accent1-color);
@@ -344,9 +350,7 @@ nav a[aria-current="page"] {
     min-height: 120px;
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group textarea:focus {
+.form-group input[type="text"]:focus, .form-group input[type="email"]:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--accent2-color);
 }
@@ -416,6 +420,7 @@ fieldset legend {
     transform: translateY(0);
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
