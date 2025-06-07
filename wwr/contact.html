@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Us | White Water Rafting Co.</title> 
+        <meta name="description" content="Contact White Water Rafting Co. for inquiries, reservations, and adventure bookings. Get in touch with our expert team for your next thrilling river experience.">
+        <meta name="author" content="Zureyma Quetzaili Manrique Santiago">
+        <link rel="stylesheet" href="styles/rafting.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+    <header>
+        <a href="index.html" aria-label="Home">
+            <img src="images/logo.png" alt="White Water Rafting Co. Logo" width="100">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <img src="images/contact-us.png" alt="Group enjoying white water rafting adventure" width="1200" height="400">
+            <h1>Contact Us</h1>
+            <article>
+                <img src="images/happy-client.jpg" alt="Smiling rafting participant giving thumbs up" width="400" height="300">
+                <p>Ready for your next adventure? Get in touch with us today! We're here to help you plan the perfect white water rafting experience.</p>
+            </article>
+        </div>
+
+        <section class="contact-info" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <div class="contact-details">
+                <div class="company-info">
+                    <h3>Company Information</h3>
+                    <address>
+                        <p><strong>White Water Rafting Co.</strong></p>
+                        <p>1234 Salto River Road<br>
+                        Adventure Valley, AV 12345</p>
+                        <p>Phone: <a href="tel:+15551234567">(555) 123-RAFT</a></p>
+                        <p>Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+                    </address>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3207396914147!2d-74.00597908459418!3d40.74844797932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1633024800000!5m2!1sen!2sus" 
+                            width="400" 
+                            height="300" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="White Water Rafting Co. Location">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="employees" aria-labelledby="employees-heading">
+            <h2 id="employees-heading">Meet Our Team</h2>
+            <div class="employee-grid">
+                <figure class="employee-item">
+                    <img src="images/employee1.png" alt="Sarah Johnson, Lead Guide" width="200" height="200">
+                    <figcaption>
+                        <strong>Sarah Johnson</strong><br>
+                        Lead Rafting Guide
+                    </figcaption>
+                </figure>
+                <figure class="employee-item">
+                    <img src="images/employee2.png" alt="Mike Rodriguez, Safety Coordinator" width="200" height="200">
+                    <figcaption>
+                        <strong>Mike Rodriguez</strong><br>
+                        Safety Coordinator
+                    </figcaption>
+                </figure>
+                <figure class="employee-item">
+                    <img src="images/employee3.png" alt="Emma Chen, Customer Service Manager" width="200" height="200">
+                    <figcaption>
+                        <strong>Emma Chen</strong><br>
+                        Customer Service Manager
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Send Us a Message</h2>
+            <form method="post" action="/submit-contact">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Purpose of Message:</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="general" name="purpose" value="general" required>
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="reservation" name="purpose" value="reservation" required>
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="website" name="purpose" value="website" required>
+                            <label for="website">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Rafting Co. | <a href="site-plan-rafting.html">Site Plan</a> | <a href="contact-wireframe.html">Contact Wireframe</a> | Zureyma Quetzaili Manrique Santiago</p>
+        <nav class="socialmedia" aria-label="Social media links">
+            <ul>
+                <li><a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook icon" width="32" height="32"></a></li>
+                <li><a href="https://x.com" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter icon" width="32" height="32"></a></li>
+                <li><a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram icon" width="32" height="32"></a></li>
+            </ul>
+        </nav>
+    </footer>
+    </body>
+</html>

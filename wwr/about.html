@@ -3,93 +3,98 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Rafting Site | About Us</title> 
-        <meta name="description" content="This is Rafting Site simulating a company. This was created by Zureyma for Web Fundamentals">
+        <title>About Us | White Water Rafting Co.</title> 
+        <meta name="description" content="Experience thrilling white water rafting adventures with White Water Rafting Co. Since 1998, we've provided safe, unforgettable journeys on the Salto River.">
         <meta name="author" content="Zureyma Quetzaili Manrique Santiago">
         <link rel="stylesheet" href="styles/rafting.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
     <header>
-        <img src="images/logo.png" alt="Rafting Company Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+        <a href="index.html" aria-label="Home">
+            <img src="images/logo.png" alt="White Water Rafting Co. Logo" width="100">
+        </a>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <div class="hero">
-            <img src="images/rafting-background.jpg" alt="Rafting Adventure">
+            <img src="images/rafting-background.jpg" alt="Group enjoying white water rafting adventure" width="1200" height="400">
             <h1>White Water Rafting Co.</h1>
             <article>
-                <img src="images/happy-client.jpg" alt="Happy Client">
+                <img src="images/happy-client.jpg" alt="Smiling rafting participant giving thumbs up" width="400" height="300">
                 <p>Our mission is to provide the most thrilling and safe white water rafting experiences. We believe in adventure, safety, and unforgettable memories for everyone!</p>
             </article>
         </div>
 
-        <section class="history">
-            <h2>History</h2>
+        <section class="history" aria-labelledby="history-heading">
+            <h2 id="history-heading">Our History</h2>
             <div class="history-content">
                 <div class="history-text">
                     <p>From our humble beginnings in 1998, when a group of river-loving friends decided to share their passion for white water, White Water Rafting Co. has grown to become a benchmark in rafting adventures. What started with a single raft and the dream of exploring every rapid of the Salto River quickly transformed into a company dedicated</p>
                 </div>
-                <img src="images/history.jpeg" alt="Company History" class="history-image">
+                <figure class="history-image">
+                    <img src="images/history.jpeg" alt="Our original rafting team in 1998" width="500" height="300">
+                    <figcaption>Our founding team in 1998</figcaption>
+                </figure>
                 <div class="history-text">
-                    <p>to offering unforgettable experiences. Over the years, we have expanded our fleet, trained the most experienced guides, and discovered new routes, but our mission remains the same: to provide safe, thrilling, and nature-respecting adventures, creating lifelong memories for each of our clients.</p>
+                    <p>to offering unforgettable experiences. Over the years, we've expanded our fleet, trained expert guides, and discovered new routes, while maintaining our commitment to safety, thrill, and respect for nature. We create lifelong memories for every adventurer who joins us.</p>
                 </div>
             </div>
         </section>
 
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
+        <section class="adventures" aria-labelledby="adventures-heading">
+            <h2 id="adventures-heading">Adventure Awaits You!</h2>
             <div class="adventure-grid">
-                <div class="adventure-item">
-                    <figure>
-                        <img src="images/rafting1.jpg" alt="Los Dientes del Diablo Rapids">
-                        <figcaption>Los Dientes del Diablo</figcaption>
-                    </figure>
-                </div>
-                <div class="adventure-item">
-                    <figure>
-                        <img src="images/rafting2.jpg" alt="Big Mallard Rapids">
-                        <figcaption>Big Mallard</figcaption>
-                    </figure>
-                </div>
-                <div class="adventure-item">
-                    <figure>
-                        <img src="images/rafting3.jpg" alt="Half Day Adventure">
-                        <figcaption>Half Day Adventure</figcaption>
-                    </figure>
-                </div>
-                <div class="adventure-item">
-                    <figure>
-                        <img src="images/rafting4.jpg" alt="Rapids Challenge">
-                        <figcaption>Rapids Challenge</figcaption>
-                    </figure>
-                </div>
-                <div class="adventure-item">
-                    <figure>
-                        <img src="images/rafting5.jpg" alt="Canyon Explorer">
-                        <figcaption>Canyon Explorer</figcaption>
-                    </figure>
-                </div>
+                <figure class="adventure-item">
+                    <img src="images/rafting1.jpg" alt="Exciting rapids at Los Dientes del Diablo" width="300" height="200">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                    <p class="difficulty">Difficulty: Advanced</p>
+                </figure>
+                <figure class="adventure-item">
+                    <img src="images/rafting2.jpg" alt="Team navigating Big Mallard rapids" width="300" height="200">
+                    <figcaption>Big Mallard</figcaption>
+                    <p class="difficulty">Difficulty: Intermediate</p>
+                </figure>
+                <figure class="adventure-item">
+                    <img src="images/rafting3.jpg" alt="Family enjoying half day adventure" width="300" height="200">
+                    <figcaption>Half Day Adventure</figcaption>
+                    <p class="difficulty">Difficulty: Beginner</p>
+                </figure>
+                <figure class="adventure-item">
+                    <img src="images/rafting4.jpg" alt="Thrilling rapids challenge course" width="300" height="200">
+                    <figcaption>Rapids Challenge</figcaption>
+                    <p class="difficulty">Difficulty: Expert</p>
+                </figure>
+                <figure class="adventure-item">
+                    <img src="images/rafting5.jpg" alt="Scenic canyon exploration route" width="300" height="200">
+                    <figcaption>Canyon Explorer</figcaption>
+                    <p class="difficulty">Difficulty: Intermediate</p>
+                </figure>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 White Water Rafting Co. | Zureyma Quetzaili Manrique Santiago</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://x.com"><img src="images/twitter.jpg" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        <p>&copy; 2025 White Water Rafting Co. | <a href="site-plan-rafting.html">Site Plan</a> | Zureyma Quetzaili Manrique Santiago</p>
+        <nav class="socialmedia" aria-label="Social media links">
+            <ul>
+                <li><a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook icon" width="32" height="32"></a></li>
+                <li><a href="https://x.com" aria-label="Twitter"><img src="images/twitter.jpg" alt="Twitter icon" width="32" height="32"></a></li>
+                <li><a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram icon" width="32" height="32"></a></li>
+            </ul>
         </nav>
     </footer>
     </body>
-
 </html>
