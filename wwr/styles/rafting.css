@@ -72,7 +72,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-img, header img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -242,7 +242,7 @@ nav a[aria-current="page"] {
     margin-bottom: 0.5rem;
 }
 
-.adventure-item figcaption {
+.adventure-item figcaption, .employee-item figcaption {
     font-family: var(--heading-font);
     font-weight: 600;
     color: var(--primary-color);
@@ -267,11 +267,6 @@ nav a[aria-current="page"] {
     object-fit: cover;
     margin: 0 auto 1rem;
     border: 3px solid var(--accent2-color);
-}
-
-.employee-item figcaption {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 .employee-item figcaption strong {
