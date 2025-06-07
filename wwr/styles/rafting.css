@@ -127,30 +127,9 @@ nav a[aria-current="page"] {
     transform: scale(1.2);
 }
 
-.grid-2, .contact-details, .history-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
 .grid-center {
     display: flex;
     justify-content: center;
-}
-
-.grid-auto, .adventure-grid, .employee-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.card-section, .history, .contact-info, .contact-form {
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
 }
 
 .contact-info h2, .contact-form h2, .history h2, .employees h2 {
@@ -464,3 +443,25 @@ fieldset legend {
         padding: 1rem;
     }
 }
+
+.card-section, .history, .contact-info, .contact-form {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.grid-2, .contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-auto, .adventure-grid, .employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
