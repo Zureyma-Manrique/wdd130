@@ -200,6 +200,77 @@ fieldset legend { font-weight: 600; color: var(--primary-color); padding: 0 0.5r
 .submit-btn:hover { background-color: var(--accent1-color); transform: translateY(-2px); }
 .submit-btn:active { transform: translateY(0); }
 
+/* Add these new styles to your existing rafting.css file */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.purpose-card, .offerings-card {
+    text-align: center;
+}
+
+.newsletter-cta-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.newsletter-form {
+    margin-top: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+.cta-banner {
+    text-align: center;
+}
+
+.trip-item p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.trip-summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-summary-table th, .trip-summary-table td {
+    border: 1px solid var(--primary-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trip-summary-table th {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-family: var(--heading-font);
+}
+
+.trip-summary-table tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
 @media (max-width: 768px) {
     header { flex-direction: column; padding: 1rem; }
     nav ul { flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
@@ -211,6 +282,9 @@ fieldset legend { font-weight: 600; color: var(--primary-color); padding: 0 0.5r
     .map-container iframe { width: 100%; max-width: 400px; height: 250px; }
     .employee-item { padding: 1rem; }
     .employee-item img { width: 120px; height: 120px; }
+    .home-grid, .newsletter-cta-section {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
