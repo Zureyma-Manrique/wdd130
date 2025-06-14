@@ -200,7 +200,6 @@ fieldset legend { font-weight: 600; color: var(--primary-color); padding: 0 0.5r
 .submit-btn:hover { background-color: var(--accent1-color); transform: translateY(-2px); }
 .submit-btn:active { transform: translateY(0); }
 
-/* Add these new styles to your existing rafting.css file */
 
 .home-grid {
     display: grid;
